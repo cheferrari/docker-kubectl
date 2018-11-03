@@ -17,6 +17,5 @@ Dockerfile
 ```
 FROM ferrariche/kubectl:1.12.0-apline
 RUN mkdir -p /root/.kube
-ADD /path/to/kubeconfig /root/.kube/config
+ADD ./config /root/.kube/config
 ```
-/path/to/kubeconfig is your kubeconfig path
